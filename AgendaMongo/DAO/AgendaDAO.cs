@@ -32,10 +32,10 @@ namespace AgendaMongo.DAO
                         {
                             agedaParaAtualizar.Add( "sobrenome", agenda.Sobrenome );
                         }
-                        if (agenda.Contatos != null && agenda.Contatos.Count > 0)
-                        {
-                            agedaParaAtualizar.Add( "contatos", agenda.TransformaContatosDocumentos() );
-                        }
+                        //if (agenda.Contatos != null && agenda.Contatos.Count > 0)
+                        //{
+                        //    agedaParaAtualizar.Add( "contatos", agenda.TransformaContatosDocumentos() );
+                        //}
 
                         var update = new BsonDocument();
                         update.Add( "$set", agedaParaAtualizar );

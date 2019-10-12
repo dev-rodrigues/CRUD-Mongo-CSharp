@@ -11,5 +11,17 @@ namespace AgendaMongo.Model
         public string Email { get; set; }
         public string Telefone { get; set; }
         public int Tipo { get; set; }
+
+        public Contato(string email, string telefone, int tipo)
+        {
+            this.Email = email;
+            this.Telefone = telefone;
+            this.Tipo = tipo;
+        }
+
+        public Contato()
+        {
+
+        }
     }
 }

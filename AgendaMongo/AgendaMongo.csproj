@@ -73,6 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\ConexaoDB.cs" />
+    <Compile Include="Config\ServiceLab.cs" />
+    <Compile Include="DAO\AgendaDAO.cs" />
     <Compile Include="Interface\IAgendaDAO.cs" />
     <Compile Include="Model\Agenda.cs" />
     <Compile Include="Model\Contato.cs" />
