@@ -17,15 +17,19 @@ namespace AgendaMongo.Config
 
         public ConexaoDB()
         {
+
             try
             {
-                var host = ConfigurationSettings.AppSettings [ "host" ];
-                var databaseName = ConfigurationSettings.AppSettings [ "database" ];
-                var collectionName = ConfigurationSettings.AppSettings [ "collection" ];
+                //var host = ConfigurationSettings.AppSettings [ "host" ];
+                //var databaseName = ConfigurationSettings.AppSettings [ "database" ];
+                //var collectionName = ConfigurationSettings.AppSettings [ "collection" ];
 
-                MongoClient = new MongoClient( host );
-                IMongoDatabase database = MongoClient.GetDatabase( databaseName );
-                MongoCollection = database.GetCollection<BsonDocument>( collectionName );
+                var client = new MongoClient( "mongodb+srv://httpsantos:segredo.3@frederico-q8xq1.mongodb.net/test?retryWrites=true&w=majority" );
+                var database = client.GetDatabase( "test" );
+
+                //MongoClient = new MongoClient( host );
+                //IMongoDatabase database = MongoClient.GetDatabase( databaseName );
+                MongoCollection = database.GetCollection<BsonDocument>( "Agendas" );
             } catch (Exception e)
             {
                 Console.WriteLine( e.Message );
