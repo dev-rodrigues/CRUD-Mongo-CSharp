@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace AgendaMongo.Model
 {
-    class Contato
+    public class Contato
     {
+        public string Email { get; set; }
+        public string Telefone { get; set; }
+        public int Tipo { get; set; }
     }
 }
