@@ -15,14 +15,6 @@ namespace AgendaMongo.Model
         public string Sobrenome { get; set; }
         public List<Contato> Contatos { get; set; }
 
-        public Agenda( string Codigo, string nome, string sobreNome, List<Contato> contatos )
-        {
-            this.Codigo = Codigo;
-            this.Nome = nome;
-            this.Sobrenome = sobreNome;
-            this.Contatos = contatos;
-        }
-
         public BsonArray TransformaContatosDocumentos()
         {
             var documentos = new BsonArray();

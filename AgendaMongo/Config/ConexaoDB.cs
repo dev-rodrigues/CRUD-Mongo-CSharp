@@ -19,9 +19,9 @@ namespace AgendaMongo.Config
         {
             try
             {
-                var host = ConfigurationManager.AppSettings [ "host" ];
-                var databaseName = ConfigurationManager.AppSettings [ "database" ];
-                var collectionName = ConfigurationManager.AppSettings [ "collection" ];
+                var host = ConfigurationSettings.AppSettings [ "host" ];
+                var databaseName = ConfigurationSettings.AppSettings [ "database" ];
+                var collectionName = ConfigurationSettings.AppSettings [ "collection" ];
 
                 MongoClient = new MongoClient( host );
                 IMongoDatabase database = MongoClient.GetDatabase( databaseName );

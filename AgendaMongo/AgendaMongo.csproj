@@ -72,7 +72,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\ConexaoDB.cs" />
+    <Compile Include="Interface\IAgendaDAO.cs" />
     <Compile Include="Model\Agenda.cs" />
+    <Compile Include="Model\Contato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

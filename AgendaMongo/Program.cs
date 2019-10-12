@@ -10,6 +10,7 @@ namespace AgendaMongo
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
